@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<div class="home-container">
+    <h1>Hello Bruno Belkhiter!</h1>
+    <p>Where Can I Help You Today?</p>
+
+    <div class="reservations">
+        <h2>Upcoming Reservations</h2>
+        <p>-----1834 Wake Forest RD 3pm Dec 4th -> 455 Vine St, Winston-Salem, NC 27101----- </p>
+    </div>
+
+    <div class="history">
+        <h2>History</h2>
+        <p>-----2456 Maple Avenue, 10am, Nov 28th -> 1120 Elm Street, 1pm, Nov 28th-----</p>
+        <p>-----7689 Oak Drive, 6pm, Nov 20th -> 3397 Pine Lane, 7pm, Nov 20th-----</p>
+        <p>-----5823 Cedar Park, 5pm, Nov 10th -> 5444 Park, 7pm, Nov 10th-----</p>
+        <!-- Dynamically list history of past reservations here -->
+    </div>
+
+    <button class="reserve">Reserve a Ride</button>
+    <button class="report">Report Incident</button>
+    <button class="feedback">Feedback</button>
+</div>
+
+<script>
+    document.querySelector('.reserve').addEventListener('click', function() {
+        window.location.href = 'reservation.html';
+    });
+
+    document.querySelector('.report').addEventListener('click', function() {
+        window.location.href = 'report-incident.html';
+    });
+
+    document.querySelector('.feedback').addEventListener('click', function() {
+        window.location.href = 'feedback.html';
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+<div class="reservation-container">
+    <h2>Reservation</h2>
+    <form action="http://localhost:4000/submit-reservation" method="post">
+    <!-- Updated action attribute -->
+        <label for="rider-name">Name of the rider:</label>
+        <input type="text" id="rider-name" name="rider-name" required>
+
+        <label for="passengers">Number of passengers:</label>
+        <input type="number" id="passengers" name="passengers" min="1" required>
+
+        <label for="carpool">Willing to carpool:</label>
+        <input type="checkbox" id="carpool" name="carpool">
+
+        <label for="date">Date of reservation:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="length">Length of reservation (hours):</label>
+        <input type="number" id="length" name="length" min="1" required>
+
+        <label for="wait-leave">Wait or leave immediately:</label>
+        <select id="wait-leave" name="wait-leave">
+            <option value="wait">Wait</option>
+            <option value="leave">Leave Immediately</option>
+        </select>
+
+        <label for="pickup">Pick up location:</label>
+        <input type="text" id="pickup" name="pickup" required>
+
+        <label for="dropoff">Drop off location:</label>
+        <input type="text" id="dropoff" name="dropoff" required>
+
+        <button type="submit">Submit Reservation</button>
+    </form>
+</div>
+</body>
+</html>
